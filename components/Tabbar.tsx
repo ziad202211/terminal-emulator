@@ -1,7 +1,7 @@
 import "./terminal.css";
 
 function openDocs() {
-  window.open("/docs", "_blank");
+  window.open(`${window.location.origin}/docs`, "_blank");
 }
 
 export default function TabBar({ tabs, activeId, onSwitch, onClose, onNewTab }: any) {
