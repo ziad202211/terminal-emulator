@@ -30,7 +30,9 @@ export default function TabBar({ tabs, activeId, onSwitch, onClose, onNewTab }: 
       </div>
 
       <button className="btn-new-tab" onClick={onNewTab}>+</button>
+      <a href="#" onClick={(e) => { e.preventDefault(); openDocs(); }}>
       <button className="btn-new-tab" onClick={openDocs}>Docs</button>
+      </a>
     </div>
   );
 }
